@@ -2,12 +2,11 @@ const LoginPage = require('../pages/LoginPage');
 const InventoryPage = require('../pages/InventoryPage');
 
 describe('SauceDemo Test Suite', () => {
-  // I unintentionally pushed this code, it was for testing purpose only.
-  // const standardUser = Cypress.env('standardUser');
-  // const problemUser = Cypress.env('problemUser');
-  // const lockedUser = Cypress.env('lockedUser');
-  // const errorUser = Cypress.env('errorUser');
-  // const password = Cypress.env('password');
+  const standardUser = Cypress.env('standardUser');
+  const problemUser = Cypress.env('problemUser');
+  const lockedUser = Cypress.env('lockedUser');
+  const errorUser = Cypress.env('errorUser');
+  const password = Cypress.env('password');
 
   beforeEach(() => {
     LoginPage.visit();
